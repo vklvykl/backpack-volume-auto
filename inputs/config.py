@@ -1,10 +1,10 @@
 CONVERT_ALL_TO_USDC = False  # convert all balances to USDC only
 
 THREADS = 1  # Enter amount of threads
-DELAY_BETWEEN_TRADE = (1200, 3600)  # Execute delay between every trade (Buy -> Delay -> Sell -> Buy -> Delay ...)
-DELAY_BETWEEN_DEAL = (1200, 3600)  # Execute delay between full trade (Buy -> Sell -> Delay -> Buy -> Sell -> Delay ...)
+DELAY_BETWEEN_TRADE = (1200, 1800)  # Execute delay between every trade (Buy -> Delay -> Sell -> Buy -> Delay ...)
+DELAY_BETWEEN_DEAL = (1200, 1800)  # Execute delay between full trade (Buy -> Sell -> Delay -> Buy -> Sell -> Delay ...)
 
-NEEDED_TRADE_VOLUME = 100000  # volume to trade, if 0 it will never stop
+NEEDED_TRADE_VOLUME = 80000  # volume to trade, if 0 it will never stop
 MIN_BALANCE_TO_LEFT = 0  # min amount to left on the balance, if 0, it is traded until the balance is equal to 0.
 
 TRADE_AMOUNT = [0, 0]  # (works nearly from +-20%), minimum (5$) and maximum amount to trade in USD, if 0 it will trade on FULL balance
